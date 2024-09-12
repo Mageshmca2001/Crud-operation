@@ -1,0 +1,26 @@
+{
+  "users": [
+    {
+      "id": "1001",
+      "name": "Magesh B",
+      "email": "Mageshmca2001@gmail.com",
+      "Role": "Software Developer",
+      "Hire": "10/12/2022",
+      "salary": "10,000",
+      "phone": "09361088242",
+      "address": {
+        "city": "Tiruvallur",
+        "street": "57 Vallalar Street Periyakuppam Tiruvallur",
+        "suite": "Near JR city Apartement",
+        "zipcode": "602001"
+      },
+      "company": {
+        "name": "Shi#ash.infotechology",
+        "catchPhrase": "",
+        "bs": "",
+        "experience": "2+",
+        "skill": "javascript,Next.js"
+      }
+    }
+  ]
+}
