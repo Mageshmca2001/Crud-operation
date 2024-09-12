@@ -25,7 +25,7 @@ function Users() {
 
     const getAllUsers = async () => {
         try {
-            const response = await axios.get('http://localhost:4000/users');
+            const response = await axios.get('https://mageshmca2001.github.io/db.json/db.json');
             if (response) {
                 setUsersList(response.data);
             }
