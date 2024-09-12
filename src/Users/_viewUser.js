@@ -31,7 +31,7 @@ function ViewUser(props) {
 
     const fetchUserData = async () => {
         try {
-            const response = await axios.get('https://66e342c7494df9a478e4c82b.mockapi.io/users' + props.userId);
+            const response = await axios.get('https://ca29145cdd40b1446cad.free.beeceptor.com/api/users/' + props.userId);
             if (response) {
                 console.log(response.data);
                 setUserInfo(response.data);
