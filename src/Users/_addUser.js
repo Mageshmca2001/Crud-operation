@@ -30,7 +30,7 @@ function AddUser(props) {
 
     const addNewUser = async()=>{
         try{
-            const response = await axios.post('https://66e342c7494df9a478e4c82b.mockapi.io/users',userInfo);
+            const response = await axios.post('https://ca29145cdd40b1446cad.free.beeceptor.com/api/users/',userInfo);
             if(response){
                 props.setUserAdded();
             }
