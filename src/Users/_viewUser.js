@@ -31,7 +31,7 @@ function ViewUser(props) {
 
     const fetchUserData = async () => {
         try {
-            const response = await axios.get('https://api.jsonsilo.com/public/43d61994-f1cc-4ea9-869c-8565302bacff' + props.userId);
+            const response = await axios.get('https://66e342c7494df9a478e4c82b.mockapi.io/users' + props.userId);
             if (response) {
                 console.log(response.data);
                 setUserInfo(response.data);
