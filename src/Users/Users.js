@@ -25,7 +25,7 @@ function Users() {
 
     const getAllUsers = async () => {
         try {
-            const response = await axios.get('https://66e342c7494df9a478e4c82b.mockapi.io/users');
+            const response = await axios.get('https://ca29145cdd40b1446cad.free.beeceptor.com/api/users/');
             if (response) {
                 setUsersList(response.data);
             }
