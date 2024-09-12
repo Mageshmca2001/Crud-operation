@@ -32,7 +32,7 @@ function EditUser(props) {
 
     const fetchUserData = async () => {
         try {
-            const response = await axios.get('https://mageshmca2001.github.io/db.json/db.json' + props.userId);
+            const response = await axios.get('https://api.jsonsilo.com/public/43d61994-f1cc-4ea9-869c-8565302bacff' + props.userId);
             if (response) {
                 console.log(response)
                 setUserInfo(response.data);
@@ -46,7 +46,7 @@ function EditUser(props) {
 
     const editExistUser = async () => {
         try {
-            const response = await axios.put('https://mageshmca2001.github.io/db.json/db.json' + props.userId, userInfo);
+            const response = await axios.put('https://api.jsonsilo.com/public/43d61994-f1cc-4ea9-869c-8565302bacff' + props.userId, userInfo);
             if (response) {
                 props.setUserEdited();
             }
