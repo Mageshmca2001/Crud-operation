@@ -30,7 +30,7 @@ function AddUser(props) {
 
     const addNewUser = async()=>{
         try{
-            const response = await axios.post('https://mageshmca2001.github.io/db.json/db.json',userInfo);
+            const response = await axios.post('https://api.jsonsilo.com/public/43d61994-f1cc-4ea9-869c-8565302bacff',userInfo);
             if(response){
                 props.setUserAdded();
             }
