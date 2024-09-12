@@ -30,7 +30,7 @@ function AddUser(props) {
 
     const addNewUser = async()=>{
         try{
-            const response = await axios.post('http://localhost:4000/users',userInfo);
+            const response = await axios.post('https://mageshmca2001.github.io/db.json/db.json',userInfo);
             if(response){
                 props.setUserAdded();
             }
