@@ -30,7 +30,7 @@ function AddUser(props) {
 
     const addNewUser = async()=>{
         try{
-            const response = await axios.post('https://api.jsonsilo.com/public/43d61994-f1cc-4ea9-869c-8565302bacff',userInfo);
+            const response = await axios.post('https://66e342c7494df9a478e4c82b.mockapi.io/users',userInfo);
             if(response){
                 props.setUserAdded();
             }
