@@ -25,7 +25,7 @@ function Users() {
 
     const getAllUsers = async () => {
         try {
-            const response = await axios.get('https://mageshmca2001.github.io/db.json/db.json');
+            const response = await axios.get('https://api.jsonsilo.com/public/43d61994-f1cc-4ea9-869c-8565302bacff');
             if (response) {
                 setUsersList(response.data);
             }
