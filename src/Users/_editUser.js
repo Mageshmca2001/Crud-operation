@@ -32,7 +32,7 @@ function EditUser(props) {
 
     const fetchUserData = async () => {
         try {
-            const response = await axios.get('http://localhost:4000/users/' + props.userId);
+            const response = await axios.get('https://mageshmca2001.github.io/db.json/db.json' + props.userId);
             if (response) {
                 console.log(response)
                 setUserInfo(response.data);
@@ -46,7 +46,7 @@ function EditUser(props) {
 
     const editExistUser = async () => {
         try {
-            const response = await axios.put('http://localhost:4000/users/' + props.userId, userInfo);
+            const response = await axios.put('https://mageshmca2001.github.io/db.json/db.json' + props.userId, userInfo);
             if (response) {
                 props.setUserEdited();
             }
