@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import  { useEffect, useState } from 'react'
 import axios from 'axios';
 
 const initialUserInfo = {
@@ -31,7 +31,7 @@ function ViewUser(props) {
 
     const fetchUserData = async () => {
         try {
-            const response = await axios.get('https://cafe079f959953c3e62a.free.beeceptor.com/api/users/' + props.userId);
+            const response = await axios.get('http://localhost:4000/users' + props.userId);
             if (response) {
                 console.log(response.data);
                 setUserInfo(response.data);
