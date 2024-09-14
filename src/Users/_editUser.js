@@ -32,7 +32,7 @@ function EditUser(props) {
 
     const fetchUserData = async () => {
         try {
-            const response = await axios.get('https://66e342c7494df9a478e4c82b.mockapi.io/users' + props.userId);
+            const response = await axios.get('http://localhost:4000/users' + props.userId);
             if (response) {
                 console.log(response)
                 setUserInfo(response.data);
@@ -46,7 +46,7 @@ function EditUser(props) {
 
     const editExistUser = async () => {
         try {
-            const response = await axios.put('https://66e342c7494df9a478e4c82b.mockapi.io/users' + props.userId, userInfo);
+            const response = await axios.put('http://localhost:4000/users' + props.userId, userInfo);
             if (response) {
                 props.setUserEdited();
             }
